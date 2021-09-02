@@ -10,4 +10,5 @@ FROM jupyter/scipy-notebook:latest
 
 # First install some missing dependencies
 RUN conda install --quiet --yes colorama
+RUN conda install --quiet --yes spacy
 
