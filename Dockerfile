@@ -11,4 +11,5 @@ FROM jupyter/scipy-notebook:latest
 # First install some missing dependencies
 RUN conda install --quiet --yes colorama
 RUN conda install --quiet --yes spacy
+RUN python -m spacy download nl_core_news_sm
 
